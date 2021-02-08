@@ -1,19 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 </head>
+
 <body>
-  <div class="col-span-6 sm:col-span-3">
-    <label for="country" class="block text-sm font-medium text-gray-700">Country / Region</label>
-    <select id="country" name="country" autocomplete="country" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
-      <option>United States</option>
-      <option>Canada</option>
-      <option>Mexico</option>
-    </select>
+  <svg class="w-7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+    <path fill-rule="evenodd"
+      d="M10 18a8 8 0 100-16 8 8 0 000 16zm.707-10.293a1 1 0 00-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L9.414 11H13a1 1 0 100-2H9.414l1.293-1.293z"
+      clip-rule="evenodd" />
+  </svg>
+  <div class="container mx-auto">
+    <div class="grid grid-cols-3 gap-4">
+      <div class="col-span-2">
+        <label for="country" class="block text-sm font-medium text-gray-700">Categoria</label>
+        <select id="country" name="country" autocomplete="country"
+          class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+          <option>Aseo personal</option>
+          <option>Servicios</option>
+          <option>Alimnetacion</option>
+        </select>
+      </div>
+      <div>
+        <label for="country" class="block text-sm font-medium text-gray-700">Icon</label>
+        <select id="country" name="country" autocomplete="country"
+          class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+          <option>icon1</option>
+          <option>icon2</option>
+          <option>icon3</option>
+        </select>
+      </div>
+    </div>
+    <div class="grid grid-cols-1">
+        <label for="country" class="block text-sm font-medium text-gray-700">valor</label>
+        <input type="text" name="valor" id="valor"
+          class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+    </div>
+
   </div>
+
+  <svg xmlns="./assets/heroicons-0.4.2/src/solid/academic-cap.svg"></svg>
+  <!-- <img src="./assets/heroicons-0.4.2/src/solid/academic-cap.svg" /> -->
+  <!-- <i src="./assets/heroicons-0.4.2/src/solid/academic-cap.svg" /> -->
+
+  <!-- <svg class="w-7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+    <path
+      d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
+  </svg> -->
 </body>
+
 </html>
