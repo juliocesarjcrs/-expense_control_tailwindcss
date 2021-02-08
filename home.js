@@ -1,14 +1,34 @@
 // For a pie chart
 console.log('inicia');
 document.addEventListener("DOMContentLoaded", function(event) {
-  console.log('cargado');
-  const menu_id = document.querySelector('#menu');
-  const close_menu = document.querySelector('#close-menu');
+    const boton = document.querySelector('#boton');
+    const menu = document.querySelector('#menu');
+    
+    boton.addEventListener('click', () => {
+        console.log('click')
+        menu.classList.toggle('hidden')
+    })
+//   icono_menu.addEventListener('click', ()=>{
+//       menu.classList.toggle('hidden')
+//       const existe = menu.classList.contains("sm:flex-col");
+//       console.log('click menu', existe);
+//     //   close_menu.classList.toggle('hidden')
+      
+//       menu.classList.toggle('flex-col')
+//   })
+//   close_menu.addEventListener('click', ()=>{
+//     console.log('click close_menu');
+//     menu.classList.toggle('hidden')
+//     // element.classList.add("element.classList.add("mystyle");");
+//     menu.classList.toggle('flex-col')
 
-  menu_id.addEventListener('click', ()=>{
-      console.log('click menu');
-      menu_id.classList.toggle('hidden')
-  })
+// })
+// document.getElementById("hamburger").onclick = function toggleMenu() {
+//     const navToggle = document.getElementsByClassName("toggle");
+//     for (let i = 0; i < navToggle.length; i++) {
+//       navToggle.item(i).classList.toggle("hidden");
+//     }
+//   };
   // Your code to run since DOM is loaded and ready
   var ctx = document.getElementById('myChart');
       var myChart = new Chart(ctx, {
