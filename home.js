@@ -34,10 +34,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
       var myChart = new Chart(ctx, {
           type: 'doughnut',
           data: {
-              labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+              labels: ['Alimnetación', 'Servicios', 'Aseo', 'Transporte', 'Comunicación', 'Salud'],
               datasets: [{
                   label: '# of Votes',
-                  data: [12, 19, 3, 5, 2, 3],
+                  data: [120000, 190000, 3000, 5000, 2000, 3000],
                   backgroundColor: [
                       'rgba(255, 99, 132, 0.2)',
                       'rgba(54, 162, 235, 0.2)',
